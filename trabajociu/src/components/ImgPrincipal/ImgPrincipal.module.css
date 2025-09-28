@@ -1,0 +1,39 @@
+.contenedorInicio {
+    background-size: cover; /*la imagen de fondo ocupa todo el contenedor y se recorta si es necesario*/
+    background-image: url(../../assets/granos2.jpg);
+    background-position: center; /*centra la imagen adentro del contenedor*/
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column; /*uno abajo del otro*/
+    align-items: center;
+    justify-content: center;
+    position: relative; /*los elementos absolute toman este contenedor como referencia*/
+}
+
+.contenedorInicio::before {
+    content: ""; /*necesario para que el elemento exista*/
+    position: absolute; /*hace que la capa se pueda colocar segun coordenadas dentro del contenedor de referencia*/
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 200px; 
+    background-color: #8c84738e;
+    z-index: 1; /*por delante de la imagen*/
+}
+
+
+.contenedorInicio h1, .contenedorInicio p  {
+    font-family: "Playfair Display", serif;
+    z-index: 1;
+    color: white;
+}
+
+.contenedorInicio p {
+    font-size: clamp(1rem, 2vw, 1.25rem);   /*siempre 2% del ancho de pantalla, pero nunca menos de 1rem ni mas que 1.25rem*/
+}                   /*min, valor, max*/
+
+.titulo {
+    font-style: italic;
+    font-size: clamp(28px, 8vw, 56px);
+}

@@ -1,0 +1,19 @@
+.boton {
+    background-color: #C2B8A3;
+    font-family: "Libre Baskerville", serif;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-color: #8c8473;
+    border-width: 2px;
+    font-size: 0.83rem;
+    color: #4f493d;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.boton:hover {
+    background-color: #ADA085;
+}
