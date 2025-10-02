@@ -1,0 +1,103 @@
+footer {
+    background-color: #8c84738e;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    border: solid thin rgba(108, 134, 60, 0.404);
+}
+
+.datos-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center; 
+    margin: auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #271b1be5;
+    flex-wrap: wrap; 
+}
+
+.datos-footer i{
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.item-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto-footer {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #271b1be5;
+}
+
+.border-icon {
+    height: 70px; 
+    width: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem; 
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 2.0rem; 
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.border-icon:hover i {
+    color: white;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 14px; 
+    margin: 20px 0 0 0;
+    color: #271b1be5;
+}
+
+@media screen and (max-width:800px) {
+    .datos-footer {
+        flex-wrap: wrap; 
+        gap: 20px;     
+    }
+}
+
+@media screen and (max-width:500px) {
+    .datos-footer {
+        flex-wrap: wrap; /* Permite que se reacomoden en filas */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .item-footer {
+        flex: 1 1 40%; /* Ocupa ~40% del contenedor, permite quepan 2 por fila */
+        min-width: 100px; /* Mínimo para que no colapsen */
+        max-width: 45%; /* Evita que se estiren demasiado */
+    }
+
+    .border-icon {
+        height: 50px;
+        width: 50px;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .texto-footer {
+        font-size: 14px;
+    }
+
+    .titulo-final {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
