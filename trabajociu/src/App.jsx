@@ -2,7 +2,7 @@ import NavigationBar from "./components/NavigationBar";
 import Contacto from "./pages/Contacto";
 import Inicio from "./pages/Inicio";
 import About from "./pages/About";
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 
 function App() {
 
