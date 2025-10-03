@@ -23,7 +23,7 @@ export default function Contacto() {
 
   const manejarSubmit = (e) => {
     e.preventDefault();
-    if (formulario.nombre.trim()){
+    if (!formulario.nombre.trim()){
       setError("El nombre es obligatorio");
       setEnviado(false);
       return;
@@ -35,7 +35,6 @@ export default function Contacto() {
       return;
     }
 
-    
     setError("");
     setEnviado(true);
 
