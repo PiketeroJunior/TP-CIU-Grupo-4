@@ -1,0 +1,32 @@
+.contenedor {
+  display: flex;              /* Activa el modo flex */
+  align-items: flex-start;    /* Alinea arriba (por si el grid crece en altura) */
+  gap: 1rem;                  /* Espacio entre sidebar y grid */
+  padding: 1rem;              /* Espaciado interior */
+}
+
+/* Sidebar ocupa ancho fijo */
+.contenedor > .sidebar {
+  flex: 0 0 250px;            /* ancho fijo de 250px */
+  /* background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6; */
+  height: 100%;
+}
+
+/* Grid ocupa todo el resto del ancho */
+.contenedor > .grid {
+  flex: 1;                    /* ocupa todo el espacio restante */
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;   /* apila los hijos verticalmente */
+  }
+
+  .contenedor > .sidebar {
+    flex: 0 0 auto;           /* deja que el ancho se adapte */
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+}
