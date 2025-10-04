@@ -1,0 +1,15 @@
+.portada {
+    background-color: #ada085;
+    width: 100%; 
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.titulo {
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-style: italic;
+    font-size: clamp(28px, 8vw, 56px);
+}

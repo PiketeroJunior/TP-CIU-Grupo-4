@@ -1,0 +1,17 @@
+.contenedor {
+    width: 80%;
+    border: 2px solid #8c8473;
+    border-radius: 8px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    align-items: center;
+    background-color: #cad1c777;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

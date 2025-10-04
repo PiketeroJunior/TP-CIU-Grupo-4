@@ -1,19 +1,37 @@
 .boton {
-    background-color: #C2B8A3;
-    font-family: "Libre Baskerville", serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     padding: 5px 20px;
-    border-color: #8c8473;
     border-width: 2px;
     font-size: 0.83rem;
-    color: #4f493d;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 1;
+    transition: background-color 0.3s ease; 
+    z-index: 1; 
+    text-decoration: none;
 }
 
-.boton:hover {
+
+
+
+.primario {
+    background-color: #C2B8A3;
+    border-color: #8c8473;
+    color: #4f493d;
+}
+
+.primario:hover {
     background-color: #ADA085;
+}
+
+
+.cerrar {
+    background-color: #cad1c7;
+    border-color: #8c8473;
+    color: #4f493d;
+}
+
+.cerrar:hover {
+    background-color: #a39c8f78;
 }

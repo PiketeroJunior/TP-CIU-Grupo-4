@@ -1,6 +1,6 @@
 import './Carrusel.css';
 import { Navigation, Pagination } from 'swiper/modules';
-import Boton from './Boton/Boton';
+import Boton from '../Boton/Boton';
 
 // Nuevo código (solución):
 import { Swiper, SwiperSlide } from 'swiper/react';
