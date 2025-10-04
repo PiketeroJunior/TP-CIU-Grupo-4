@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import styles from './NavigationBar.module.css'
 // import NavDropdown from 'react-bootstrap/NavDropdown'; Por si lo queremos usar mas adelante
 
 function CollapsibleExample() {
@@ -18,7 +19,9 @@ function CollapsibleExample() {
 							<Nav.Link as={NavLink} to="/about">Nosotros</Nav.Link>
 					</Nav>
 					<Nav>
-						<Nav.Link href="#deets">Carrito</Nav.Link>
+						<Nav.Link href="#deets" className={styles["carrito"]}>
+							<i className='bx bx-cart'></i>
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
