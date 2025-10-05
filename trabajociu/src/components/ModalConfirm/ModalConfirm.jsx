@@ -15,9 +15,9 @@ export default function ModalConfirm({isOpen, onClose, titulo, mensaje, textoBot
     <Modal show={isOpen} onHide={onClose} backdrop="static" keyboard={false}>
       <div className={styles.modal}>
         <Modal.Header>
-            <Modal.Title className={styles.texto}>{titulo}</Modal.Title>
+            <Modal.Title className={styles.titulo}>{titulo}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{mensaje}</Modal.Body>
+        <Modal.Body className={styles.texto}>{mensaje}</Modal.Body>
         <Modal.Footer>
           <Boton texto={textoBoton} variant={variantBoton} onClick={handleClick}></Boton>
         </Modal.Footer>
