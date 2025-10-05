@@ -3,7 +3,7 @@ import Boton from "../Boton/Boton"
 import styles from "./ModalConfirm.module.css"
 import { useNavigate } from "react-router-dom";
 
-export default function ModalConfirm({mostrar, onClose, titulo, mensaje, textoBoton, variantBoton, to}) {
+export default function ModalConfirm({isOpen, onClose, titulo, mensaje, textoBoton, variantBoton, to}) {
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -12,7 +12,7 @@ export default function ModalConfirm({mostrar, onClose, titulo, mensaje, textoBo
   }
   
   return (
-    <Modal show={mostrar} onHide={onClose} backdrop="static" keyboard={false}>
+    <Modal show={isOpen} onHide={onClose} backdrop="static" keyboard={false}>
       <div className={styles.modal}>
         <Modal.Header>
             <Modal.Title className={styles.texto}>{titulo}</Modal.Title>

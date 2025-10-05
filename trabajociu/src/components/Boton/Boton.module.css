@@ -26,12 +26,23 @@
 }
 
 
-.cerrar {
+.secundario {
     background-color: #cad1c7;
     border-color: #8c8473;
     color: #4f493d;
 }
 
-.cerrar:hover {
+.secundario:hover {
     background-color: #a39c8f78;
+}
+
+.largo {
+    padding: 5px 80px;
+    background-color: #C2B8A3;
+    border-color: #8c8473;
+    color: #4f493d;
+}
+
+.largo:hover {
+    background-color: #ADA085;
 }

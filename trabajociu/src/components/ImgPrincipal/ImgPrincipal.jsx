@@ -9,7 +9,7 @@ export default function ImgPrincipal() {
       <div className={styles.contenedorInicio}>
         <h1 className={styles.titulo}>Luna & Granos Café</h1>
         <p>Momentos únicos en cada taza</p>
-        <Boton texto="carta" to="/menu"></Boton>
+        <Boton texto="carta" to="/menu" variant="largo"></Boton>
       </div>
   )
 }

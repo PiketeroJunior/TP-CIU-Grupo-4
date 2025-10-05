@@ -23,7 +23,7 @@ const productosDeEjemplo = [
 const Carrusel = () => {
   return (
     <div className="carrusel-contenedor">
-      <h2>Carrusel de Productos con Swiper</h2>
+      <h2 className="prodDest">Productos destacados</h2>
       <Swiper
         // Módulos que vas a usar
         modules={[Navigation, Pagination]}

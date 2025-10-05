@@ -1,5 +1,5 @@
 footer {
-    background-color: #8c84738e;
+    background-color: #8c8473d3;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
@@ -34,6 +34,7 @@ footer {
     margin-top: 10px;
     font-size: 17px;
     color: #271b1be5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .border-icon {
@@ -63,6 +64,7 @@ footer {
     font-size: 14px; 
     margin: 20px 0 0 0;
     color: #271b1be5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width:800px) {

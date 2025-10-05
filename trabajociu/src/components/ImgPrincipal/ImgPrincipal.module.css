@@ -30,7 +30,7 @@
 }
 
 .contenedorInicio p {
-    font-size: clamp(1rem, 2vw, 1.25rem);   /*siempre 2% del ancho de pantalla, pero nunca menos de 1rem ni mas que 1.25rem*/
+    font-size: clamp(1.12rem, 2vw, 1.25rem);   /*siempre 2% del ancho de pantalla, pero nunca menos de 1rem ni mas que 1.25rem*/
 }                   /*min, valor, max*/
 
 .titulo {
