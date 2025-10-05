@@ -38,7 +38,6 @@ export default function Formulario() {
 
     
     const formatearFecha = (fecha) => {
-        if (!fecha) return ""
         const [año, mes, dia] = fecha.split("-")
         return `${dia}/${mes}/${año}`
     }
@@ -71,6 +70,9 @@ export default function Formulario() {
 //     }
 //   }, [data])
 
+    const horarios = ["8:00", "8:30", "9:00", "9:30","10:00", "10:30", "11:00", "11:30","12:00", "12:30", "13:00", "13:30","14:00", "14:30", "15:00", "15:30",
+        "16:00", "16:30", "17:00", "17:30","18:00", "18:30", "19:00", "19:30","20:00"]
+
   return (
     <div className={styles.contenedor}>
         <Form onSubmit={manejarEnvio}>
@@ -100,31 +102,9 @@ export default function Formulario() {
                     <Form.Label className={styles.texto}>Hora</Form.Label>
                     <Form.Select aria-label="Default select example" value={data.hora} onChange={cambiar} name="hora" required>
                         <option value="">Selecciona</option>
-                        <option value="8:00">8:00</option>
-                        <option value="8:30">8:30</option>
-                        <option value="9:00">9:00</option>
-                        <option value="9:30">9:30</option>
-                        <option value="10:00">10:00</option>
-                        <option value="10:30">10:30</option>
-                        <option value="11:00">11:00</option>
-                        <option value="11:30">11:30</option>
-                        <option value="12:00">12:00</option>
-                        <option value="12:30">12:30</option>
-                        <option value="13:00">13:00</option>
-                        <option value="13:30">13:30</option>
-                        <option value="14:00">14:00</option>
-                        <option value="14:30">14:30</option>
-                        <option value="15:00">15:00</option>
-                        <option value="15:30">15:30</option>
-                        <option value="16:00">16:00</option>
-                        <option value="16:30">16:30</option>
-                        <option value="17:00">17:00</option>
-                        <option value="17:30">17:30</option>
-                        <option value="18:00">18:00</option>
-                        <option value="18:30">18:30</option>
-                        <option value="19:00">19:00</option>
-                        <option value="19:30">19:30</option>
-                        <option value="20:00">20:00</option>
+                        {horarios.map(h => (
+                            <option value={h}>{h}</option>
+                        ))}
                     </Form.Select>
                 </Form.Group>
 

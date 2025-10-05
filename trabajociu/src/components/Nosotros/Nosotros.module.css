@@ -1,0 +1,95 @@
+/* Estilos del componente AboutUs.module.css */
+
+.about-us-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #4B3832; /* Tono de café oscuro */
+    
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #D6C1AE;
+    padding-bottom: 10px;
+    
+}
+
+/* --- Bloque Principal (Texto + Imagen) --- */
+
+.main-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* Alinea los ítems arriba */
+    margin-bottom: 60px;
+    flex-wrap: wrap; /* Permite que se apilen en móviles */
+}
+
+.main-image {
+    width: 100%;
+    max-width: 500px; /* Tamaño máximo para la imagen */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-block {
+    flex: 1;
+    min-width: 300px; /* Asegura que no se haga demasiado pequeño */
+}
+
+.text-block h3 {
+    font-size: 1.8rem;
+    color: #8C5C38; /* Tono de café más claro */
+    margin-top: 0;
+}
+
+.text-block p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* --- Galería de Clientes --- */
+
+.gallery-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #8C5C38;
+}
+
+.client-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 4 columnas y responsivo */
+    gap: 20px;
+}
+
+.client-photo {
+    width: 100%;
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.client-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query para responsividad en dispositivos pequeños */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    }
+    .main-image {
+        max-width: 100%;
+    }
+    .about-title {
+        font-size: 2rem;
+    }
+}
