@@ -17,7 +17,7 @@ export default function SideBarBS() {
   };
 
   return (
-    <div className="flex-shrink-0 p-3" style={{ width: "280px" }}>
+    <div className="flex-shrink-0 p-3" style={{ width: "280px"}}>
       <a
         href="/"
         className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom"
@@ -30,7 +30,7 @@ export default function SideBarBS() {
         >
           <use xlinkHref="#bootstrap"></use>
         </svg>
-        <span className="fs-5 fw-semibold">Collapsible</span>
+        <span className="fs-5 fw-semibold">Menú</span>
       </a>
       <ul className="list-unstyled ps-0">
         <li className="mb-1">

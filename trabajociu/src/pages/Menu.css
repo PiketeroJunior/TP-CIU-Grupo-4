@@ -1,7 +1,7 @@
 .contenedor {
   display: flex;              /* Activa el modo flex */
   align-items: flex-start;    /* Alinea arriba (por si el grid crece en altura) */
-  gap: 1rem;                  /* Espacio entre sidebar y grid */
+  gap: 0.5rem;                  /* Espacio entre sidebar y grid */
   padding: 1rem;              /* Espaciado interior */
 }
 
