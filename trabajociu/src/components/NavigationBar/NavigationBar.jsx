@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from './NavigationBar.module.css'
 import Carrito from '../../pages/Carrito';
+import CartButton from '../CartButton/CartButton';
 // import Carrito from '../../pages/Carrito';
 // import NavDropdown from 'react-bootstrap/NavDropdown'; Por si lo queremos usar mas adelante
 
@@ -34,9 +35,10 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 				</Container>
 			</Navbar>
 			<Nav>
-				<Button variant="light" onClick={handleShow}>
-					<i className='bx bx-cart'>{cantTotal > 0 ? cantTotal : ''}</i>
-				</Button>
+				{/* <Button variant="light" onClick={handleShow}>
+					<i className='bx bx-cart' style={{ fontSize: '1.5rem' }}>{cantTotal > 0 ? cantTotal : ''}</i>
+				</Button> */}
+				<CartButton count={cantTotal} onClick={handleShow} />
 				<Offcanvas show={show} onHide={handleClose} placement="end">
 					<Offcanvas.Header closeButton>
 						<Offcanvas.Title id={styles.carritoTitulo}>Carrito</Offcanvas.Title>
