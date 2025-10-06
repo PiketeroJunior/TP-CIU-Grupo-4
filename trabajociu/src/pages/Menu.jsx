@@ -3,10 +3,13 @@ import GridMenu from "../components/gridMenu/gridMenu"
 import { productos } from "../data/productos"
 import "./Menu.css"
 import { Container } from "react-bootstrap"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 export default function Menu() {
+  useEffect(() => {
+    document.title = 'Menu - Luna & Granos Café'
+  })
 
   const [filtrosActivos, setFiltrosActivos] = useState([])
 

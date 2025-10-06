@@ -2,6 +2,10 @@
     font-size: 30px;
 }
 
+.logo {
+    height: 50px; /* ajustá el tamaño que necesites */
+    width: auto;
+}
 
 .texto {
     font-family: "Libre Baskerville", serif;

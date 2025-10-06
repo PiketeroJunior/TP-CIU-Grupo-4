@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from './NavigationBar.module.css'
+import logo from '../../assets/Logo luna cafe.png'
 // import NavDropdown from 'react-bootstrap/NavDropdown'; Por si lo queremos usar mas adelante
 
 function CollapsibleExample() {
@@ -10,7 +11,7 @@ function CollapsibleExample() {
 	return (
 		<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top">
 			<Container>
-				<Navbar.Brand as={NavLink} to="/" className={styles.texto}>Luna & Granos Café</Navbar.Brand>
+				<Navbar.Brand as={NavLink} to="/" className={styles.texto}><img src={logo} alt="Luna Café" className={styles.logo}/></Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
