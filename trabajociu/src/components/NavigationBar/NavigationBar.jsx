@@ -19,7 +19,7 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 
 	return (
 		<div className={styles.navbar}>
-			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top">
+			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
 				<Container>
 					<Navbar.Brand as={NavLink} to="/" className={styles.texto}>Luna & Granos Café</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -39,7 +39,7 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 				</Button>
 				<Offcanvas show={show} onHide={handleClose} placement="end">
 					<Offcanvas.Header closeButton>
-						<Offcanvas.Title>Carrito</Offcanvas.Title>
+						<Offcanvas.Title id={styles.carritoTitulo}>Carrito</Offcanvas.Title>
 					</Offcanvas.Header>
 					<Offcanvas.Body>
 						<Carrito

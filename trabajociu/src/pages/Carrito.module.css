@@ -1,6 +1,6 @@
 .carritoContainer{
-    padding: 10px;
-    margin: 10px
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
 }
 
 .productoEnCarrito{
@@ -9,16 +9,27 @@
     justify-content: space-between;
     padding: 10px;
     margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    /* background-color: aquamarine; */
 }
 
-.informacionProducto{
+.accionesProducto{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+    /* background-color: yellow; */
+}
+.informacionProducto #precio{
+    font-size: 12px;
+    font-family: "Libre Baskerville", serif;
+    color: #4f493d;
+    font-style: italic;
+    font-weight: bold;
     /* background-color: tomato; */
 }
 .cantidadProducto{
-    justify-content: space-between;
     /* background-color: red; */
 }
 
@@ -27,4 +38,24 @@
     margin-right: 10px;
     padding: 5px;
     /* background-color: red; */
+}
+
+.totalContainer{
+    text-align: center;
+    /* background-color: red; */
+}
+.totalContainer #precioTotal{
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+    color: #4f493d;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#carritoVacio{
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: black;
 }
