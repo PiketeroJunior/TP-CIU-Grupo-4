@@ -29,7 +29,7 @@ export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, ca
       setCarrito([...carrito, producto])
     }
     setCantTotal(cantTotal + producto.cantidad)
-    setValorTotal(valorTotal + producto.precio * producto.cantidad)
+    setValorTotal(valorTotal + producto.precio)
   }
 
   return (
