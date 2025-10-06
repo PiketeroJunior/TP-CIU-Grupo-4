@@ -57,20 +57,26 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                             </div>
                             <div className={styles.accionesProducto}>
                                 <div className={styles.cantidadProducto}>
-                                    <button onClick={() => disminuirCantidad(producto)} >-</button>
-                                    <span className={styles.cantidad}>{producto.cantidad}</span>
-                                    <button onClick={() => aumentarCantidad(producto)} >+</button>
+                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-dark" onClick={() => disminuirCantidad(producto)}>
+                                            -
+                                        </button>
+                                        <button type="button" class="btn btn-outline-dark">{producto.cantidad}</button>
+                                        <button type="button" class="btn btn-outline-dark" onClick={() => aumentarCantidad(producto)}>
+                                            +
+                                        </button>
+                                    </div>
                                 </div>
                                 <div className={styles.eliminarProducto}>
-                                    <Boton texto='Eliminar' onClick={() => eliminarProducto(producto)}/>
+                                    <Boton texto='Eliminar' onClick={() => eliminarProducto(producto)} />
                                 </div>
                             </div>
                         </div>
                     )}
                     <div className={styles.totalContainer}>
                         <h5 id={styles.precioTotal}>{`Total: $ ${valorTotal}`}</h5>
-                        <button className={styles.botonPagar} onClick={pagarCarrito}>Pagar</button>
-                        <button className={styles.botonVaciar} onClick={vaciarCarrito}>Vaciar carrito</button>
+                        <button type="button" class="btn btn-outline-success" onClick={pagarCarrito}>Pagar</button>
+                        <button type="button" class="btn btn-outline-danger"onClick={vaciarCarrito}>Vaciar Carrito</button>
                     </div>
                 </>
             )}
