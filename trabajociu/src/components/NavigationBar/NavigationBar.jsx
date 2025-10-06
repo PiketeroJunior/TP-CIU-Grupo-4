@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import styles from './NavigationBar.module.css'
 // import NavDropdown from 'react-bootstrap/NavDropdown'; Por si lo queremos usar mas adelante
 
-function CollapsibleExample() {
+function CollapsibleExample({cantTotal}) {
 
 	return (
 		<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top">
@@ -20,8 +20,8 @@ function CollapsibleExample() {
 							<Nav.Link as={NavLink} to="/about" className={styles.secciones}>Nosotros</Nav.Link>
 					</Nav>
 					<Nav>
-						<Nav.Link href="#deets" className={styles["carrito"]}>
-							<i className='bx bx-cart'></i>
+						<Nav.Link as={NavLink} to='/cart' className={styles["carrito"]}>
+							<i className='bx bx-cart'>{cantTotal > 0 ? cantTotal : ''}</i>
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
