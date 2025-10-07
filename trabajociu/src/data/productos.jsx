@@ -6,7 +6,7 @@ export const productos = [
     descripcion: "Café intenso, elaborado con granos 100% arábica recién molidos.",
     precio: 1200,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/34187295/pexels-photo-34187295.jpeg",
     categoria: "Bebidas",
     subcategoria: "Cafés"
   },
@@ -16,7 +16,7 @@ export const productos = [
     descripcion: "Combinación suave de espresso y leche vaporizada, con espuma ligera.",
     precio: 1500,
     cantidad: 1,    
-    imagen: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/34184241/pexels-photo-34184241.jpeg",
     categoria: "Bebidas",
     subcategoria: "Cafés"
   },
@@ -26,7 +26,7 @@ export const productos = [
     descripcion: "Espresso con leche espumada y un toque de cacao en polvo.",
     precio: 1600,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1525457136159-8878648a7ad3?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/29396822/pexels-photo-29396822.jpeg",
     categoria: "Bebidas",
     subcategoria: "Cafés"
   },
@@ -36,7 +36,7 @@ export const productos = [
     descripcion: "Espresso suave alargado con agua caliente, sabor equilibrado.",
     precio: 1300,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1587731563871-1e7d81e57f04?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/31964023/pexels-photo-31964023.jpeg",
     categoria: "Bebidas",
     subcategoria: "Cafés"
   },
@@ -48,7 +48,7 @@ export const productos = [
     descripcion: "Infusión de té negro con especias y leche vaporizada cremosa.",
     precio: 1400,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1627492431798-5eaaa2b2c6cd?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/5946641/pexels-photo-5946641.jpeg",
     categoria: "Bebidas",
     subcategoria: "Infusiones"
   },
@@ -58,7 +58,7 @@ export const productos = [
     descripcion: "Bebida espesa con cacao artesanal y un toque de canela.",
     precio: 1600,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1541849546-216549ae2160?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/1700859/pexels-photo-1700859.jpeg",
     categoria: "Bebidas",
     subcategoria: "Infusiones"
   },
@@ -68,7 +68,7 @@ export const productos = [
     descripcion: "Infusión ligera y refrescante, ideal para después de comer.",
     precio: 1200,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1587731563871-1e7d81e57f04?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/5946688/pexels-photo-5946688.jpeg",
     categoria: "Bebidas",
     subcategoria: "Infusiones"
   },
@@ -80,7 +80,7 @@ export const productos = [
     descripcion: "Preparado con frutas naturales y leche entera o vegetal.",
     precio: 1800,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1612197527762-9c74c64f0b46?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/3625372/pexels-photo-3625372.jpeg",
     categoria: "Bebidas",
     subcategoria: "Licuados"
   },
@@ -90,7 +90,7 @@ export const productos = [
     descripcion: "Con espinaca, manzana verde, jengibre y limón.",
     precio: 1900,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1590080875831-cfdb4b3c4b22?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/616833/pexels-photo-616833.jpeg",
     categoria: "Bebidas",
     subcategoria: "Licuados"
   },
@@ -102,7 +102,7 @@ export const productos = [
     descripcion: "Clásicas medialunas dulces, doradas y glaseadas con almíbar.",
     precio: 900,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1515669097368-22e68427d265?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/3806365/pexels-photo-3806365.jpeg",
     categoria: "Comidas",
     subcategoria: "Dulces"
   },
@@ -112,7 +112,7 @@ export const productos = [
     descripcion: "Esponjoso muffin casero con arándanos frescos y azúcar glas.",
     precio: 1100,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/90609/pexels-photo-90609.png",
     categoria: "Comidas",
     subcategoria: "Dulces"
   },
@@ -122,7 +122,7 @@ export const productos = [
     descripcion: "Relleno con crema de almendras y cubierto con láminas crocantes.",
     precio: 1700,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1617196034796-73a4c9a0f61c?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/5662124/pexels-photo-5662124.jpeg",
     categoria: "Comidas",
     subcategoria: "Dulces"
   },
@@ -132,7 +132,7 @@ export const productos = [
     descripcion: "Brownie húmedo de chocolate amargo con trozos de nuez.",
     precio: 1300,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1599785209707-28a1a6b1ee4a?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/33813613/pexels-photo-33813613.jpeg",
     categoria: "Comidas",
     subcategoria: "Dulces"
   },
@@ -144,7 +144,7 @@ export const productos = [
     descripcion: "Pan de campo crocante con jamón natural y queso fundido.",
     precio: 2200,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1604908177075-33d820e3a8b2?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/15110222/pexels-photo-15110222.jpeg",
     categoria: "Comidas",
     subcategoria: "Salados"
   },
@@ -154,7 +154,7 @@ export const productos = [
     descripcion: "Bagel artesanal con queso crema, salmón ahumado y hojas verdes.",
     precio: 3100,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1606755962773-d324d39f2c5f?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/3957501/pexels-photo-3957501.jpeg",
     categoria: "Comidas",
     subcategoria: "Salados"
   },
@@ -164,7 +164,7 @@ export const productos = [
     descripcion: "Porción de tarta casera de espinaca y calabaza, masa integral.",
     precio: 2400,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1565958011705-44e2119f3f30?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/5852252/pexels-photo-5852252.jpeg",
     categoria: "Comidas",
     subcategoria: "Salados"
   },
@@ -176,7 +176,7 @@ export const productos = [
     descripcion: "Café con leche + 2 medialunas + jugo de naranja natural.",
     precio: 2500,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/20204672/pexels-photo-20204672.jpeg",
     categoria: "Especiales",
     subcategoria: "Combos"
   },
@@ -186,7 +186,7 @@ export const productos = [
     descripcion: "Tostado + jugo natural + café a elección + mini muffin.",
     precio: 3200,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1543352634-093d9486b8b2?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/2272037/pexels-photo-2272037.jpeg",
     categoria: "Especiales",
     subcategoria: "Combos"
   },
@@ -198,7 +198,7 @@ export const productos = [
     descripcion: "Brownie de chocolate sin gluten, ideal para acompañar el café.",
     precio: 1500,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1589987683740-119d0b77e9b3?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/5386662/pexels-photo-5386662.jpeg",
     categoria: "Especiales",
     subcategoria: "Sin TACC"
   },
@@ -208,7 +208,7 @@ export const productos = [
     descripcion: "Muffin elaborado sin lácteos ni huevo, con harina integral.",
     precio: 1400,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1608198093002-ad4e005484d8?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/3650436/pexels-photo-3650436.jpeg",
     categoria: "Especiales",
     subcategoria: "Vegano"
   },
@@ -218,7 +218,7 @@ export const productos = [
     descripcion: "Doble capa de maicena con dulce de leche sin gluten.",
     precio: 1300,
     cantidad: 1,
-    imagen: "https://images.unsplash.com/photo-1617196034796-73a4c9a0f61c?w=400&auto=format&fit=crop&q=60",
+    imagen: "https://images.pexels.com/photos/17358380/pexels-photo-17358380.jpeg",
     categoria: "Especiales",
     subcategoria: "Sin TACC"
   }

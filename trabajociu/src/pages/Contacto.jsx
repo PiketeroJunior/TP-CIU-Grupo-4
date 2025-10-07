@@ -2,6 +2,7 @@
 import Portada from '../components/Portada/Portada'
 import ContactoForm from '../components/Contacto/ContactoForm'
 import { useEffect } from 'react'
+import { Container } from 'react-bootstrap'
 
 export default function Contacto() {
   useEffect(() => {
@@ -10,7 +11,9 @@ export default function Contacto() {
   return (
     <div>
         <Portada texto="Contacto"></Portada>
-        <ContactoForm/>
+        <Container>
+          <ContactoForm/>
+        </Container>
     </div>
   )
 }

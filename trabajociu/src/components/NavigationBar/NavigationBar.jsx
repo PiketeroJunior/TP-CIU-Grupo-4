@@ -21,6 +21,7 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 
 	return (
 		<div className={styles.navbar}>
+			<Container>
 			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
 				<Container>
 					<Navbar.Brand as={NavLink} to="/" className={styles.texto}>
@@ -35,14 +36,17 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 							<Nav.Link as={NavLink} to="/about" className={styles.secciones}>Nosotros</Nav.Link>
 							<Nav.Link as={NavLink} to="/contacto" className={styles.secciones}>Contacto</Nav.Link>
 						</Nav>
+
+						<Nav className="ms-auto">
+							<CartButton count={cantTotal} onClick={handleShow} />
+						</Nav>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
-			<Nav>
-				{/* <Button variant="light" onClick={handleShow}>
-					<i className='bx bx-cart' style={{ fontSize: '1.5rem' }}>{cantTotal > 0 ? cantTotal : ''}</i>
-				</Button> */}
-				<CartButton count={cantTotal} onClick={handleShow} />
+			</Container>
+			
+			
+				
 				<Offcanvas show={show} onHide={handleClose} placement="end">
 					<Offcanvas.Header closeButton>
 						<Offcanvas.Title id={styles.carritoTitulo}>Carrito</Offcanvas.Title>
@@ -58,7 +62,9 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 						/>
 					</Offcanvas.Body>
 				</Offcanvas>
-			</Nav>
+			
+			
+			
 		</div>
 	);
 }
