@@ -1,5 +1,18 @@
-.carrito i {
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.carrito {
     font-size: 30px;
+    color: #4f493d;
+    cursor: pointer;
+    font-family: "Libre Baskerville", serif;
 }
 
 .logo {
@@ -18,3 +31,41 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Carrito  */
+
+.carritoContainer{
+    padding: 10px;
+    margin: 10px
+}
+
+.productoEnCarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px
+}
+
+.informacionProducto{
+    justify-content: space-between;
+    /* background-color: tomato; */
+}
+.cantidadProducto{
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.cantidad{
+    position: center;
+    margin-right: 10px;
+    padding: 5px;
+    /* background-color: red; */
+}
+
+#carritoTitulo{
+    font-family: "Libre Baskerville", serif;
+    font-size: 25px;
+    color: black;
+}

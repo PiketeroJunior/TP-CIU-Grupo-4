@@ -6,6 +6,8 @@ import { Container } from "react-bootstrap"
 import { useEffect, useState } from "react"
 
 
+export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, cantTotal, setCantTotal}) {
+  //Logica de filtros
 export default function Menu() {
   useEffect(() => {
     document.title = 'Menu - Luna & Granos Café'
@@ -19,6 +21,22 @@ export default function Menu() {
       ? productos
       : productos.filter((p) => filtrosActivos.includes(p.subcategoria))
 
+  //Logica del carrito 
+
+  function agregarAlCarrito (producto) {
+    const itemEnCarrito = carrito.find(item => item.id === producto.id)
+    if(itemEnCarrito){
+      const nuevosProductos = carrito.map(item => 
+        item.id === producto.id ? {...item, cantidad: item.cantidad + 1} : item
+      )
+      setCarrito(nuevosProductos)
+    }else{
+      setCarrito([...carrito, producto])
+    }
+    setCantTotal(cantTotal + producto.cantidad)
+    setValorTotal(valorTotal + producto.precio)
+  }
+
   return (
     <>
       <Container>
@@ -30,7 +48,10 @@ export default function Menu() {
           />
         </div>
         <div className="grid">
-          <GridMenu productos={productosFiltrados}/>
+          <GridMenu 
+          productos={productosFiltrados}
+          agregarAlCarrito={agregarAlCarrito}
+          />
         </div>
       </div>
       </Container>
