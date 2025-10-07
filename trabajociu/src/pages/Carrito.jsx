@@ -1,8 +1,11 @@
 import styles from './Carrito.module.css'
 import Boton from '../components/Boton/Boton';
+import { useState } from 'react';
+import ModalConfirm from '../components/ModalConfirm/ModalConfirm';
 
 function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, setCantTotal }) {
     const estaVacio = carrito.length === 0;
+    const [mostrarExito, setMostrarExito] = useState(false);
 
     function vaciarCarrito() {
         setCarrito([]);
@@ -18,7 +21,7 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
     }
 
     function pagarCarrito() {
-        alert("Pago realizado con exito! Gracias por su compra.")
+        setMostrarExito(true)
         vaciarCarrito()
     }
 
@@ -80,6 +83,14 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                     </div>
                 </>
             )}
+            <ModalConfirm
+            isOpen={mostrarExito}
+            titulo="¡Gracias por tu compra!"
+            mensaje="El pago se realizó con éxito."
+            onClose={() => setMostrarExito(false)}
+            textoBoton="cerrar"
+            variantBoton="secundario"
+            ></ModalConfirm>
         </div >
     )
 }

@@ -1,5 +1,5 @@
 import './Carrusel.css';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Boton from '../Boton/Boton';
 
 // Nuevo código (solución):
@@ -26,7 +26,7 @@ const Carrusel = () => {
       <h2 className="prodDest">Productos destacados</h2>
       <Swiper
         // Módulos que vas a usar
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         // Configuración para que el carrusel sea responsive
         breakpoints={{
           // Cuando la pantalla sea >= 640px
@@ -51,6 +51,8 @@ const Carrusel = () => {
         // Si no se especifica un breakpoint, este es el valor por defecto
         slidesPerView={1}
         spaceBetween={10}
+        autoplay={{ delay: 2000, disableOnInteraction: false, }} // Cambia de diapositiva cada 3 segundos
+        loop={true} // Hace que el carrusel sea infinito
       >
         {/* Mapea tus productos para crear cada diapositiva */}
         {productosDeEjemplo.map((producto) => (

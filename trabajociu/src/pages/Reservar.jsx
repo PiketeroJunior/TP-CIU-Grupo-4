@@ -9,8 +9,7 @@ export default function Reservar() {
   })
   return (
     <>
-      
-        <Portada texto="Hacé tu reserva"/>
+      <Portada texto="Hacé tu reserva" variant="reserva"/>
       <Container>
         <Formulario/>
       </Container>

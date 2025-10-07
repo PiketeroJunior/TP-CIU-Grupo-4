@@ -12,7 +12,7 @@ const CLIENT_IMG_4 = "https://images.pexels.com/photos/2102037/pexels-photo-2102
 function AboutUs() {
   return (
     <>
-      <Portada texto="Quiénes somos"/>
+      <Portada texto="Quiénes somos" variant="nosotros"/>
       <section className={styles['about-us-container']} id="about-us">
         
         <div className={styles['main-content']}>

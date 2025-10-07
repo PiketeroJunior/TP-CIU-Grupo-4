@@ -1,15 +1,59 @@
 .portada {
-    background-color: #ada085;
-    width: 100%; 
+    background-size: cover; /*la imagen de fondo ocupa todo el contenedor y se recorta si es necesario*/
+    background-position: center; /*centra la imagen adentro del contenedor*/
+    width: 100%;
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    position: relative; /*los elementos absolute toman este contenedor como referencia*/
+    overflow: auto;
 }
+
+.portada::before {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 200px; 
+    background-color: #8c84738e;
+    z-index: 1; 
+}
+
 
 .titulo {
     font-family: "Playfair Display", serif;
     color: white;
     font-style: italic;
     font-size: clamp(28px, 8vw, 56px);
+    z-index: 1;
+}
+
+.menu {
+    background-image: url(../../assets/cafe.jpg);
+}
+
+.menu::before {
+    background-color: #8c8473ae;
+}
+
+.nosotros{
+    background-image: url(../../assets/gente.jpg);
+}
+
+.nosotros::before {
+    background-color: #8c8473ae;
+}
+
+.reserva {
+    background-image: url(../../assets/local.jpg);
+}
+
+.reserva::before {
+    background-color: #8c8473ae;
+}
+
+.contacto {
+    background-image: url(../../assets/cafetera.jpg);
 }

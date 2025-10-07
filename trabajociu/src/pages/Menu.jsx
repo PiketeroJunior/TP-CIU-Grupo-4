@@ -39,7 +39,7 @@ export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, ca
 
   return (
     <>
-      <Portada texto="Menú"/>
+      <Portada texto="Menú" variant="menu"/>
       <Container>
       <div className="contenedor">
         <div className="sidebar">

@@ -10,7 +10,7 @@ export default function Contacto() {
   },[]);
   return (
     <div>
-        <Portada texto="Contacto"></Portada>
+        <Portada texto="Contacto" variant="contacto"></Portada>
         <Container>
           <ContactoForm/>
         </Container>
