@@ -8,7 +8,6 @@ import { useEffect, useState } from "react"
 
 export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, cantTotal, setCantTotal}) {
   //Logica de filtros
-export default function Menu() {
   useEffect(() => {
     document.title = 'Menu - Luna & Granos Café'
   })
