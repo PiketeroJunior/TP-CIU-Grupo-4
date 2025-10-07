@@ -23,7 +23,9 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 		<div className={styles.navbar}>
 			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
 				<Container>
-					<Navbar.Brand as={NavLink} to="/" className={styles.texto}>Luna & Granos Café</Navbar.Brand>
+					<Navbar.Brand as={NavLink} to="/" className={styles.texto}>
+						<img src={logo} alt="Luna Café" className={styles.logo}/>
+					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="me-auto">
@@ -31,6 +33,7 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 							<Nav.Link as={NavLink} to="/menu" className={styles.secciones}>Menu</Nav.Link>
 							<Nav.Link as={NavLink} to="/reservar" className={styles.secciones}>Reservar</Nav.Link>
 							<Nav.Link as={NavLink} to="/about" className={styles.secciones}>Nosotros</Nav.Link>
+							<Nav.Link as={NavLink} to="/contacto" className={styles.secciones}>Contacto</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

@@ -35,7 +35,8 @@ function App() {
           setCarrito={setCarrito}
           setValorTotal={setValorTotal}
           setCantTotal={setCantTotal}
-        />} />
+          />} />
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<Navigate to="/" />} /> {/* Podemos quizás hacer una pagina de error, u otra*/}
       </Routes>
       <Footer />
