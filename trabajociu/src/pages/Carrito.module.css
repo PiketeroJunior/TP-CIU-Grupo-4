@@ -29,9 +29,6 @@
     font-weight: bold;
     /* background-color: tomato; */
 }
-.cantidadProducto{
-    /* background-color: red; */
-}
 
 .cantidad{
     position: center;
@@ -44,6 +41,13 @@
     text-align: center;
     /* background-color: red; */
 }
+
+.totalContainer button{
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color: red; */
+}
+
 .totalContainer #precioTotal{
     font-size: 20px;
     font-family: "Libre Baskerville", serif;
