@@ -4,6 +4,7 @@ import { productos } from "../data/productos"
 import "./Menu.css"
 import { Container } from "react-bootstrap"
 import { useEffect, useState } from "react"
+import Portada from "../components/Portada/Portada"
 
 
 export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, cantTotal, setCantTotal}) {
@@ -38,6 +39,7 @@ export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, ca
 
   return (
     <>
+      <Portada texto="Menú"/>
       <Container>
       <div className="contenedor">
         <div className="sidebar">

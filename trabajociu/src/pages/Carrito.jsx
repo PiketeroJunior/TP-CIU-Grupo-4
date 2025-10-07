@@ -68,7 +68,7 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                                     </div>
                                 </div>
                                 <div className={styles.eliminarProducto}>
-                                    <Boton texto='Eliminar' onClick={() => eliminarProducto(producto)} />
+                                    <Boton texto='Eliminar' onClick={() => eliminarProducto(producto)} variant="secundario"/>
                                 </div>
                             </div>
                         </div>

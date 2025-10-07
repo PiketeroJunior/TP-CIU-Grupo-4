@@ -27,7 +27,7 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
         <svg className="bi pe-none me-2" width="30" height="24" aria-hidden="true">
           <use xlinkHref="#bootstrap"></use>
         </svg>
-        <span className="fs-5 fw-semibold ms-2">Menú</span>
+        <span className="fs-5 fw-semibold ms-2" style={{fontFamily:"Libre Baskerville, serif", fontWeight:"bold", color:"#4f493d"}}>Menú</span>
       </div>
 
       {/* Pastillas de filtros activos */}
@@ -43,6 +43,7 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
               className={`btn btn-toggle d-inline-flex align-items-center rounded border-0 ${open[categoria] ? '' : 'collapsed'}`}
               onClick={() => toggle(categoria)}
               aria-expanded={open[categoria]}
+              style={{fontFamily:"Arial, Helvetica, sans-serif"}}
             >
               {/* Icono de flechita */}
               <svg
@@ -64,6 +65,7 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
                     <Link
                       className="link-body-emphasis d-inline-flex text-decoration-none rounded"
                       onClick={() => toggleFiltro(sub)}
+                      style={{fontFamily:"Arial, Helvetica, sans-serif"}}
                     >
                       {sub}
                     </Link>

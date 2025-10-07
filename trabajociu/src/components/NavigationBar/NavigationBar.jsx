@@ -24,7 +24,7 @@ function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTot
 			<Container>
 			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
 				<Container>
-					<Navbar.Brand as={NavLink} to="/" className={styles.texto}>
+					<Navbar.Brand as={NavLink} to="/">
 						<img src={logo} alt="Luna Café" className={styles.logo}/>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />

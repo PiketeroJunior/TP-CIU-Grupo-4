@@ -36,7 +36,7 @@
 .aclaracion {
     text-align: center;
     font-size: 0.9em;
-    font-family: "Libre Baskerville";
+    font-family: "Libre Baskerville", serif;
     color: #666;
     padding-bottom: 10px;
     border-bottom: 1px solid #4f493d4b;

@@ -14,11 +14,11 @@ export default function CardMenu({ prod, agregarAlCarrito }) {
           />
         </div>
         <Card.Body className="d-flex flex-column">
-          <Card.Title>{prod.titulo}</Card.Title>
-          <Card.Text className="flex-grow-1">
+          <Card.Title style={{fontFamily:"Libre Baskerville, serif", color:"#4f493d", fontWeight:"bold"}}>{prod.titulo}</Card.Title>
+          <Card.Text className="flex-grow-1" style={{fontFamily: "Arial, Helvetica, sans-serif"}}>
             {prod.descripcion}
           </Card.Text>
-          <Card.Text>
+          <Card.Text style={{fontFamily: "Arial, Helvetica, sans-serif"}}>
             <strong>
               {typeof prod.precio === "number" && !isNaN(prod.precio)
                 ? `$${prod.precio.toFixed(2)}`
