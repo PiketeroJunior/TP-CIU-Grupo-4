@@ -11,7 +11,7 @@ export default function Footer(){
                             <i className='bx bx-envelope'></i>
                         </a>
                     </div>
-                    <p className={styles["texto-footer"]}>Envía tu CV</p>
+                    <p className={styles["texto-footer"]}>Enviá tu CV</p>
                 </div>
                 <div className={styles["item-footer"]}>
                     <div className={styles["border-icon"]}>
@@ -35,9 +35,10 @@ export default function Footer(){
                             <i className='bx bxl-instagram'></i>
                         </a>
                     </div>
-                    <p className={styles["texto-footer"]}>Síguenos</p>
+                    <p className={styles["texto-footer"]}>Seguinos</p>
                 </div> 
             </div>
+            <p className={styles["texto-sobre-linea"]}>Encontranos en Tte. Origone 123 - Hurlingham</p>
             <h2 className={styles["titulo-final"]}>&copy; 2025 Grupo 4 CIU</h2>
         </footer>
     )

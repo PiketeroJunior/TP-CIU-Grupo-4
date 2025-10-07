@@ -9,6 +9,7 @@ import styles from './NavigationBar.module.css'
 import Carrito from '../../pages/Carrito';
 import CartButton from '../CartButton/CartButton';
 // import Carrito from '../../pages/Carrito';
+import logo from '../../assets/Logo luna cafe.png'
 // import NavDropdown from 'react-bootstrap/NavDropdown'; Por si lo queremos usar mas adelante
 
 function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, setCantTotal }) {

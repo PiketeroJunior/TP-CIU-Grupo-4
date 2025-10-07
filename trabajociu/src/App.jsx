@@ -4,6 +4,7 @@ import Reservar from "./pages/Reservar";
 import Inicio from "./pages/Inicio";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
+import Contacto from './pages/Contacto';
 import Footer from "./components/footer/Footer"
 import Carrito from './pages/Carrito'
 import { Routes, Route, Navigate } from 'react-router-dom';

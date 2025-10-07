@@ -18,7 +18,7 @@ footer {
 }
 
 .datos-footer i{
-    color: black;
+    color: #4f493d;
     transition: color 0.3s ease-in-out;
 }
 
@@ -33,7 +33,7 @@ footer {
 .texto-footer {
     margin-top: 10px;
     font-size: 17px;
-    color: #271b1be5;
+    color: #4f493d;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -51,7 +51,7 @@ footer {
 }
 
 .border-icon:hover {
-    background-color: black;
+    background-color: #4f493d;
     cursor: pointer;
 }
 
@@ -63,9 +63,20 @@ footer {
     text-align: center;
     font-size: 14px; 
     margin: 20px 0 0 0;
-    color: #271b1be5;
+    color: #4f493d;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.texto-sobre-linea {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4f493d;
+    position: relative;
+    bottom: 30px;    
+}
+
 
 @media screen and (max-width:800px) {
     .datos-footer {
@@ -98,7 +109,7 @@ footer {
         font-size: 14px;
     }
 
-    .titulo-final {
+    .titulo-final, .texto-sobre-linea {
         font-size: 13px;
         padding: 0 10px;
     }
