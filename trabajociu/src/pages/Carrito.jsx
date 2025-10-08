@@ -3,7 +3,7 @@ import Boton from '../components/Boton/Boton';
 import { useState } from 'react';
 import ModalConfirm from '../components/ModalConfirm/ModalConfirm';
 import { FaRegTrashCan } from 'react-icons/fa6';
-import { Button } from 'react-bootstrap';
+import { Badge, Button } from 'react-bootstrap';
 
 
 
@@ -64,15 +64,17 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                             </div>
                             <div className={styles.accionesProducto}>
                                 <div className={styles.cantidadProducto}>
+                                    <Badge pill bg="light" text="dark">          
                                     <div className="btn-group" role="group" aria-label="Basic outlined example">
-                                        <button type="button" className="btn btn-outline-dark" onClick={() => disminuirCantidad(producto)}>
+                                        <button type="button" className=" btn btn-light btn-sm" onClick={() => disminuirCantidad(producto)}>
                                             -
                                         </button>
-                                        <button type="button" className="btn btn-outline-dark">{producto.cantidad}</button>
-                                        <button type="button" className="btn btn-outline-dark" onClick={() => aumentarCantidad(producto)}>
+                                        <button type="button" className="btn btn-light btn-sm" >{producto.cantidad}</button>
+                                        <button type="button" className="btn btn-light btn-sm" onClick={() => aumentarCantidad(producto)}>
                                             +
                                         </button>
                                     </div>
+                                    </Badge>
                                 </div>
                                 {/* <div className={styles.eliminarProducto}>
                                     <Boton texto='Eliminar' onClick={() => eliminarProducto(producto)} variant="secundario"/>
