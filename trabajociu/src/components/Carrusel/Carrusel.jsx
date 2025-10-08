@@ -9,7 +9,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-
 // Lista de productos de ejemplo
 const productosDeEjemplo = [
   { id: 1, nombre: "Desayuno Suizo", precio: 199.99, imagenUrl: "https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg" },
@@ -26,7 +25,7 @@ const Carrusel = () => {
       <h2 className="prodDest">Productos destacados</h2>
       <Swiper
         // Módulos que vas a usar
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Autoplay]}
         // Configuración para que el carrusel sea responsive
         breakpoints={{
           // Cuando la pantalla sea >= 640px
@@ -47,13 +46,15 @@ const Carrusel = () => {
         }}
         // Configuración para la navegación y paginación
         navigation
-        pagination={{ clickable: true }}
+        // pagination={{ clickable: false }}
         // Si no se especifica un breakpoint, este es el valor por defecto
         slidesPerView={1}
         spaceBetween={10}
         autoplay={{ delay: 2000, disableOnInteraction: false, }} // Cambia de diapositiva cada 3 segundos
         loop={true} // Hace que el carrusel sea infinito
       >
+
+      
         {/* Mapea tus productos para crear cada diapositiva */}
         {productosDeEjemplo.map((producto) => (
           <SwiperSlide key={producto.id}>
@@ -61,11 +62,12 @@ const Carrusel = () => {
               <img className="imagen-tarjeta" src={producto.imagenUrl} alt={producto.nombre} />
               <h3 className="nombre-tarjeta">{producto.nombre}</h3>
               <p className="precio-tarjeta">${producto.precio}</p>
-              <Boton texto="Comprar" onClick={() => alert(`Compraste: ${producto.nombre}`)} />
+              <Boton texto="Comprar" onClick={() => agregarAlCarrito(producto)} />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
     </div>
   );
 };

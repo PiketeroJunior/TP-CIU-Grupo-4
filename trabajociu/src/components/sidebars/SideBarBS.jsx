@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Pills from "../Pills/Pills";
 import { Link } from "react-router-dom";
+import { CiCoffeeCup } from "react-icons/ci";
+import { FaAngleRight } from "react-icons/fa";
 
 export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
   const [open, setOpen] = useState({ Bebidas: true, Comidas: false, Especiales: false });
@@ -24,9 +26,7 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
   return (
     <div className="flex-shrink-0 p-3" style={{ width: "280px" }}>
       <div className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
-        <svg className="bi pe-none me-2" width="30" height="24" aria-hidden="true">
-          <use xlinkHref="#bootstrap"></use>
-        </svg>
+        <CiCoffeeCup size={24}/>
         <span className="fs-5 fw-semibold ms-2" style={{fontFamily:"Libre Baskerville, serif", fontWeight:"bold", color:"#4f493d"}}>Menú</span>
       </div>
 
@@ -46,16 +46,17 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
               style={{fontFamily:"Arial, Helvetica, sans-serif"}}
             >
               {/* Icono de flechita */}
-              <svg
+              {/* <svg
                 className={`bi me-2 flex-shrink-0`}
                 width="16"
                 height="16"
                 fill="currentColor"
-                viewBox="0 0 16 16"
-                style={{ transition: "transform 0.2s", transform: open[categoria] ? "rotate(90deg)" : "rotate(0deg)" }}
-              >
+                viewBox="0 0 16 16" */}
+                <FaAngleRight style={{ transition: "transform 0.2s", transform: open[categoria] ? "rotate(90deg)" : "rotate(0deg)" }}/>
+                
+              {/* >
                 <path fillRule="evenodd" d="M6 12l6-4-6-4v8z" />
-              </svg>
+              </svg> */}
               {categoria}
             </button>
             <div className={`collapse${open[categoria] ? " show" : ""}`}>

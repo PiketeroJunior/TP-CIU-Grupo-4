@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import Reseñas from "../components/Reseñas/Reseñas";
 
 
+
 export default function Inicio() {
   useEffect(() => {
     document.title = 'Inicio - Luna & Granos Café'
@@ -12,7 +13,7 @@ export default function Inicio() {
   return (
     <>
         <ImgPrincipal/>
-        <Carrusel/>
+        <Carrusel />
         <Reseñas/>
     </>
   )
