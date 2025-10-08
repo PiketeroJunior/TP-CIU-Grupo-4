@@ -1,0 +1,120 @@
+
+.comentarios-carrusel-contenedor {
+    padding: 80px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.titulo-comentarios {
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+    color: #4f493d;
+    font-size: clamp(26px, 2vw, 56px);
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.comentario-tarjeta {
+    background: #fcfcfc;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #e0e0e0; 
+    height: 260px; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 0; 
+    position: relative; 
+}
+
+.header-tarjeta {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.info {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombre-cliente {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #4B3832;
+}
+
+.rol-cliente {
+    font-size: 0.8rem;
+    color: #8C5C38; 
+    margin: 0;
+}
+
+.header-tarjeta > div:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.review-texto {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+
+@media (max-width: 1023px) {
+    .comentarios-carrusel-contenedor {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .comentarios-carrusel-contenedor {
+        padding: 40px 15px;
+    }
+    
+    .titulo-comentarios {
+        margin-bottom: 30px;
+    }
+    
+    .subtitulo-elegante {
+        font-size: 0.9rem;
+    }
+
+    .comentario-tarjeta {
+        height: 220px; /* Un poco más pequeña */
+        padding: 20px;
+    }
+    
+    .avatar {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    
+    .nombre-cliente {
+        font-size: 0.95rem;
+    }
+    
+    .review-texto {
+        font-size: 0.9rem;
+    }
+}
+
