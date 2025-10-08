@@ -6,8 +6,8 @@
   box-sizing: border-box;
   padding: 20px 0; /* Espacio arriba y abajo del carrusel */
   margin: 0 auto;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-top: 65px;
 }
 
 .producto-tarjeta {

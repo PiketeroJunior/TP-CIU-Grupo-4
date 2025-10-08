@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import Portada from "../components/Portada/Portada"
 
 
-export default function Menu({carrito, agregarAlCarrito, setCarrito, valorTotal, setValorTotal, cantTotal, setCantTotal}) {
+export default function Menu({ agregarAlCarrito}) {
   //Logica de filtros
   useEffect(() => {
     document.title = 'Menu - Luna & Granos Café'

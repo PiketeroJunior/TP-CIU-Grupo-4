@@ -45,13 +45,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/reservar" element={<Reservar />} />
         <Route path="/menu" element={<Menu
-          carrito={carrito}
           agregarAlCarrito={agregarAlCarrito}
-          valorTotal={valorTotal}
-          cantTotal={cantTotal}
-          setCarrito={setCarrito}
-          setValorTotal={setValorTotal}
-          setCantTotal={setCantTotal}
           />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="*" element={<Navigate to="/" />} /> {/* Podemos quizás hacer una pagina de error, u otra*/}
