@@ -5,7 +5,7 @@ import Reseñas from "../components/Reseñas/Reseñas";
 
 
 
-export default function Inicio() {
+export default function Inicio({agregarAlCarrito}) {
   useEffect(() => {
     document.title = 'Inicio - Luna & Granos Café'
   }, []);
@@ -13,7 +13,7 @@ export default function Inicio() {
   return (
     <>
         <ImgPrincipal/>
-        <Carrusel />
+        <Carrusel agregarAlCarrito={agregarAlCarrito}/>
         <Reseñas/>
     </>
   )

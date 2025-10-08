@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import Portada from "../components/Portada/Portada"
 
 
-export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, cantTotal, setCantTotal}) {
+export default function Menu({carrito, agregarAlCarrito, setCarrito, valorTotal, setValorTotal, cantTotal, setCantTotal}) {
   //Logica de filtros
   useEffect(() => {
     document.title = 'Menu - Luna & Granos Café'
@@ -21,21 +21,7 @@ export default function Menu({carrito, setCarrito, valorTotal, setValorTotal, ca
       ? productos
       : productos.filter((p) => filtrosActivos.includes(p.subcategoria))
 
-  //Logica del carrito 
-
-  function agregarAlCarrito (producto) {
-    const itemEnCarrito = carrito.find(item => item.id === producto.id)
-    if(itemEnCarrito){
-      const nuevosProductos = carrito.map(item => 
-        item.id === producto.id ? {...item, cantidad: item.cantidad + 1} : item
-      )
-      setCarrito(nuevosProductos)
-    }else{
-      setCarrito([...carrito, producto])
-    }
-    setCantTotal(cantTotal + producto.cantidad)
-    setValorTotal(valorTotal + producto.precio)
-  }
+  
 
   return (
     <>

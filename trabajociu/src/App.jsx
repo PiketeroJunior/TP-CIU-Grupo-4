@@ -14,6 +14,22 @@ function App() {
   const [valorTotal, setValorTotal] = useState(0)
   const [cantTotal, setCantTotal] = useState(0)
 
+  //Logica del carrito 
+  
+    function agregarAlCarrito (producto) {
+      const itemEnCarrito = carrito.find(item => item.id === producto.id)
+      if(itemEnCarrito){
+        const nuevosProductos = carrito.map(item => 
+          item.id === producto.id ? {...item, cantidad: item.cantidad + 1} : item
+        )
+        setCarrito(nuevosProductos)
+      }else{
+        setCarrito([...carrito, producto])
+      }
+      setCantTotal(cantTotal + producto.cantidad)
+      setValorTotal(valorTotal + producto.precio)
+    }
+
   return (
     <>
       <NavigationBar
@@ -25,11 +41,12 @@ function App() {
         setCantTotal={setCantTotal}
       />
       <Routes>
-        <Route path="/" element={<Inicio />} />
+        <Route path="/" element={<Inicio agregarAlCarrito={agregarAlCarrito}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/reservar" element={<Reservar />} />
         <Route path="/menu" element={<Menu
           carrito={carrito}
+          agregarAlCarrito={agregarAlCarrito}
           valorTotal={valorTotal}
           cantTotal={cantTotal}
           setCarrito={setCarrito}

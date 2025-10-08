@@ -2,6 +2,10 @@ import styles from './Carrito.module.css'
 import Boton from '../components/Boton/Boton';
 import { useState } from 'react';
 import ModalConfirm from '../components/ModalConfirm/ModalConfirm';
+import { FaRegTrashCan } from 'react-icons/fa6';
+import { Button } from 'react-bootstrap';
+
+
 
 function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, setCantTotal }) {
     const estaVacio = carrito.length === 0;
@@ -70,9 +74,14 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                                         </button>
                                     </div>
                                 </div>
-                                <div className={styles.eliminarProducto}>
+                                {/* <div className={styles.eliminarProducto}>
                                     <Boton texto='Eliminar' onClick={() => eliminarProducto(producto)} variant="secundario"/>
-                                </div>
+                                </div> */}
+                                <Button
+                                 style={{ border: 'none', background: 'transparent', color: '#6c4141' }} 
+                                 onClick={() => eliminarProducto(producto)} title="Eliminar producto">
+                                    <FaRegTrashCan/>
+                                </Button>
                             </div>
                         </div>
                     )}
