@@ -10,7 +10,7 @@ import 'swiper/css';
 const Reseñas = () => {
   return (
     <div className={styles["comentarios-carrusel-contenedor"]}>
-      <h2 className={styles["titulo-comentarios"]}>Nuestros Clientes Felices</h2>
+      <h2 className={styles["titulo-comentarios"]}>Nuestros clientes felices</h2>
       
       <Swiper
         modules={[Autoplay]}

@@ -1,5 +1,5 @@
 import './Carrusel.css';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import Boton from '../Boton/Boton';
 
 // Nuevo código (solución):
