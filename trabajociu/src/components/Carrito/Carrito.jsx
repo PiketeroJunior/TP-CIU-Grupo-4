@@ -1,7 +1,7 @@
 import styles from './Carrito.module.css'
-import Boton from '../components/Boton/Boton';
+import Boton from '../Boton/Boton';
 import { useState } from 'react';
-import ModalConfirm from '../components/ModalConfirm/ModalConfirm';
+import ModalConfirm from '../ModalConfirm/ModalConfirm';
 import { FaRegTrashCan } from 'react-icons/fa6';
 import { Badge, Button } from 'react-bootstrap';
 

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from './NavigationBar.module.css'
-import Carrito from '../../pages/Carrito';
+import Carrito from '../Carrito/Carrito';
 import CartButton from '../CartButton/CartButton';
 
 import logo from '../../assets/Logo luna cafe.png'
