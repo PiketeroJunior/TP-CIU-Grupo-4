@@ -130,6 +130,7 @@ export default function Formulario() {
         mensaje={mensajeReserva}
         onClose={() => setMostrarExito(false)}
         textoBoton="ir al inicio"
+        variantBoton="secundario"
         to="/"
         ></ModalConfirm>
     </>

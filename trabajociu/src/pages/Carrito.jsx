@@ -76,9 +76,7 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                                     </div>
                                     </Badge>
                                 </div>
-                                {/* <div className={styles.eliminarProducto}>
-                                    <Boton texto='Eliminar' onClick={() => eliminarProducto(producto)} variant="secundario"/>
-                                </div> */}
+                                
                                 <Button
                                  style={{ border: 'none', background: 'transparent', color: '#6c4141' }} 
                                  onClick={() => eliminarProducto(producto)} title="Eliminar producto">
@@ -99,8 +97,9 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
             titulo="¡Gracias por tu compra!"
             mensaje="El pago se realizó con éxito."
             onClose={() => setMostrarExito(false)}
-            textoBoton="cerrar"
+            textoBoton="ir al inicio"
             variantBoton="secundario"
+            to="/"
             ></ModalConfirm>
         </div >
     )

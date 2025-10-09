@@ -83,6 +83,7 @@ export default function ContactoForm() {
         mensaje="Se envió la consulta. Te responderemos a la brevedad."
         onClose={() => setMostrarExito(false)}
         textoBoton="ir al inicio"
+        variantBoton="secundario"
         to="/"
         ></ModalConfirm>
     </>
