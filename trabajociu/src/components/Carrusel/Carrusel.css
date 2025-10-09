@@ -52,3 +52,20 @@
   margin-bottom: 30px;
   font-style: italic;
 }
+
+
+.carrusel-contenedor .swiper-slide {
+  display: flex;
+  justify-content: center;   /* centra horizontal */
+  align-items: stretch;      /* opcional */
+}
+
+
+.producto-tarjeta {
+  width: 100%;
+  max-width: 260px;   /* el tamaño visual de la tarjeta */
+  margin: 0 auto;
+  display: flex;              /* para que el contenido se distribuya bien */
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -23,7 +23,7 @@ const Carrusel = ({agregarAlCarrito}) => {
       <h2 className="prodDest">Productos destacados</h2>
       <Swiper
         // Módulos que vas a usar
-        modules={[Navigation, Autoplay]}
+        modules={[Autoplay]}
         // Configuración para que el carrusel sea responsive
         breakpoints={{
           // Cuando la pantalla sea >= 640px
@@ -43,7 +43,7 @@ const Carrusel = ({agregarAlCarrito}) => {
           },
         }}
         // Configuración para la navegación y paginación
-        navigation
+        //navigation
         // pagination={{ clickable: false }}
         // Si no se especifica un breakpoint, este es el valor por defecto
         slidesPerView={1}
