@@ -1,5 +1,5 @@
 import SideBarBS from "../components/sidebars/SideBarBS"
-import GridMenu from "../components/gridMenu/gridMenu"
+import GridMenu from "../components/GridMenu/GridMenu"
 import { productos } from "../data/productos"
 import "./Menu.css"
 import { Container } from "react-bootstrap"
@@ -8,14 +8,14 @@ import Portada from "../components/Portada/Portada"
 
 
 export default function Menu({ agregarAlCarrito}) {
-  //Logica de filtros
+  
   useEffect(() => {
     document.title = 'Menu - Luna & Granos Café'
   })
 
   const [filtrosActivos, setFiltrosActivos] = useState([])
 
-  // Filtrar productos según filtros activos
+  
   const productosFiltrados =
     filtrosActivos.length === 0
       ? productos

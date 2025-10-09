@@ -30,12 +30,12 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
         <span className="fs-5 fw-semibold ms-2" style={{fontFamily:"Libre Baskerville, serif", fontWeight:"bold", color:"#4f493d"}}>Menú</span>
       </div>
 
-      {/* Pastillas de filtros activos */}
+      
       {filtrosActivos.map((f) => (
         <Pills key={f} text={f} onRemove={() => toggleFiltro(f)} />
       ))}
 
-      {/* Categorías colapsables */}
+      
       <ul className="list-unstyled ps-0">
         {Object.entries(categorias).map(([categoria, subcategorias]) => (
           <li key={categoria} className="mb-1">
@@ -45,18 +45,9 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
               aria-expanded={open[categoria]}
               style={{fontFamily:"Arial, Helvetica, sans-serif"}}
             >
-              {/* Icono de flechita */}
-              {/* <svg
-                className={`bi me-2 flex-shrink-0`}
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16" */}
+              
                 <FaAngleRight style={{ transition: "transform 0.2s", transform: open[categoria] ? "rotate(90deg)" : "rotate(0deg)" }}/>
                 
-              {/* >
-                <path fillRule="evenodd" d="M6 12l6-4-6-4v8z" />
-              </svg> */}
               {categoria}
             </button>
             <div className={`collapse${open[categoria] ? " show" : ""}`}>

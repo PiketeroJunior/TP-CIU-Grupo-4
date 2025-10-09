@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Menu from "./pages/Menu";
 import Contacto from './pages/Contacto';
 import Footer from "./components/footer/Footer"
-import Carrito from './pages/Carrito'
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
   const [valorTotal, setValorTotal] = useState(0)
   const [cantTotal, setCantTotal] = useState(0)
 
-  //Logica del carrito 
+ 
   
     function agregarAlCarrito (producto) {
       const itemEnCarrito = carrito.find(item => item.id === producto.id)
@@ -48,7 +47,7 @@ function App() {
           agregarAlCarrito={agregarAlCarrito}
           />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="*" element={<Navigate to="/" />} /> {/* Podemos quizás hacer una pagina de error, u otra*/}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </>

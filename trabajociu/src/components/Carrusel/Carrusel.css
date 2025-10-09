@@ -1,18 +1,18 @@
-/* En tu archivo CSS del componente o un archivo global */
+
 
 .carrusel-contenedor {
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
-  padding: 20px 0; /* Espacio arriba y abajo del carrusel */
+  padding: 20px 0; 
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 65px;
 }
 
 .producto-tarjeta {
-  width: 250px; /* O el ancho que desees para cada tarjeta */
-  margin: 0 10px; /* Para dar espacio entre las tarjetas */
+  width: 250px; 
+  margin: 0 10px;
   text-align: center;
   padding: 15px;
   border: 1px solid #ddd;
@@ -56,16 +56,16 @@
 
 .carrusel-contenedor .swiper-slide {
   display: flex;
-  justify-content: center;   /* centra horizontal */
-  align-items: stretch;      /* opcional */
+  justify-content: center;   
+  align-items: stretch;     
 }
 
 
 .producto-tarjeta {
   width: 100%;
-  max-width: 260px;   /* el tamaño visual de la tarjeta */
+  max-width: 260px;   
   margin: 0 auto;
-  display: flex;              /* para que el contenido se distribuya bien */
+  display: flex;              
   flex-direction: column;
   justify-content: space-between;
 }

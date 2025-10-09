@@ -1,7 +1,7 @@
 import styles from './Nosotros.module.css';
 
 
-// URLs de las imágenes obtenidas:
+
 const MAIN_IMG = "https://images.pexels.com/photos/2159065/pexels-photo-2159065.jpeg";
 const CLIENT_IMG_1 = "https://images.pexels.com/photos/373639/pexels-photo-373639.jpeg";
 const CLIENT_IMG_2 = "https://images.pexels.com/photos/3796810/pexels-photo-3796810.jpeg";

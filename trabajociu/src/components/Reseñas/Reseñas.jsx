@@ -35,7 +35,7 @@ const Reseñas = () => {
                   <h3 className={styles["nombre-cliente"]}>{item.name}</h3>
                   <p className={styles["rol-cliente"]}>{item.role}</p>
                 </div>
-                {/* ⭐️ Usa el componente Rating y le pasa la puntuación ⭐️ */}
+
                 <Rating score={item.score} /> 
               </div>
               <p className={styles["review-texto"]}>{item.review}</p>

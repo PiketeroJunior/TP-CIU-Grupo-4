@@ -83,15 +83,15 @@ footer {
 
 @media screen and (max-width:500px) {
     .datos-footer {
-        flex-wrap: wrap; /* Permite que se reacomoden en filas */
+        flex-wrap: wrap; 
         justify-content: center;
         gap: 15px;
     }
 
     .item-footer {
-        flex: 1 1 40%; /* Ocupa ~40% del contenedor, permite quepan 2 por fila */
-        min-width: 100px; /* Mínimo para que no colapsen */
-        max-width: 45%; /* Evita que se estiren demasiado */
+        flex: 1 1 40%;
+        min-width: 100px; 
+        max-width: 45%;
     }
 
     .border-icon {

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,9 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import styles from './NavigationBar.module.css'
 import Carrito from '../../pages/Carrito';
 import CartButton from '../CartButton/CartButton';
-// import Carrito from '../../pages/Carrito';
+
 import logo from '../../assets/Logo luna cafe.png'
-// import NavDropdown from 'react-bootstrap/NavDropdown'; Por si lo queremos usar mas adelante
+
 
 function NavigationBar({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, setCantTotal }) {
 	const [show, setShow] = useState(false);

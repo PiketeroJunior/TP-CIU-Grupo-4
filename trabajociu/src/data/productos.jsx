@@ -1,5 +1,5 @@
 export const productos = [
-  // ☕ BEBIDAS → Cafés
+
   {
     id: 1,
     titulo: "Café Espresso",
@@ -41,7 +41,7 @@ export const productos = [
     subcategoria: "Cafés"
   },
 
-  // 🍵 BEBIDAS → Infusiones
+  
   {
     id: 8,
     titulo: "Té Chai Latte",
@@ -73,7 +73,7 @@ export const productos = [
     subcategoria: "Infusiones"
   },
 
-  // 🧊 BEBIDAS → Licuados
+  
   {
     id: 20,
     titulo: "Licuado de Frutilla y Banana",
@@ -95,7 +95,7 @@ export const productos = [
     subcategoria: "Licuados"
   },
 
-  // 🍰 COMIDAS → Dulces / Panadería
+  
   {
     id: 6,
     titulo: "Medialunas de Manteca",
@@ -137,7 +137,7 @@ export const productos = [
     subcategoria: "Dulces"
   },
 
-  // 🥪 COMIDAS → Salados
+  
   {
     id: 5,
     titulo: "Tostado de Jamón y Queso",
@@ -169,7 +169,7 @@ export const productos = [
     subcategoria: "Salados"
   },
 
-  // 🍽️ ESPECIALES → Combos
+  
   {
     id: 15,
     titulo: "Combo Desayuno Clásico",
@@ -191,7 +191,7 @@ export const productos = [
     subcategoria: "Combos"
   },
 
-  // 🌾 ESPECIALES → Sin TACC / Veganos
+  
   {
     id: 17,
     titulo: "Brownie sin TACC",

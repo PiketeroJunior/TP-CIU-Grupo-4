@@ -16,7 +16,7 @@
 }
 
 .logo {
-    height: 50px; /* ajustá el tamaño que necesites */
+    height: 50px; 
     width: auto;
 }
 
@@ -25,7 +25,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Carrito  */
+
 
 .carritoContainer{
     padding: 10px;
@@ -44,18 +44,15 @@
 
 .informacionProducto{
     justify-content: space-between;
-    /* background-color: tomato; */
 }
 .cantidadProducto{
     justify-content: space-between;
-    /* background-color: red; */
 }
 
 .cantidad{
     position: center;
     margin-right: 10px;
     padding: 5px;
-    /* background-color: red; */
 }
 
 #carritoTitulo{

@@ -8,7 +8,7 @@ export default function GridMenu({ productos, agregarAlCarrito }) {
         {productos.map((prod, idx) => (
           <Col
             key={idx}
-            xs={12} sm={6} md={4}  // responsive: 1 col en xs, 2 en sm, 3 en md y más
+            xs={12} sm={6} md={4} 
             className="mb-4"
           >
             <CardMenu

@@ -1,28 +1,27 @@
-/* Estilos del componente AboutUs.module.css */
 
 .about-us-container {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    color: #4B3832; /* Tono de café oscuro */
+    color: #4B3832; 
     
 }
 
 
-/* --- Bloque Principal (Texto + Imagen) --- */
+
 
 .main-content {
     display: flex;
     gap: 40px;
-    align-items: flex-start; /* Alinea los ítems arriba */
+    align-items: flex-start; 
     margin-bottom: 60px;
-    flex-wrap: wrap; /* Permite que se apilen en móviles */
+    flex-wrap: wrap; 
 }
 
 .main-image {
     width: 100%;
-    max-width: 500px; /* Tamaño máximo para la imagen */
+    max-width: 500px; 
     height: auto;
     border-radius: 10px;
     object-fit: cover;
@@ -31,7 +30,7 @@
 
 .text-block {
     flex: 1;
-    min-width: 300px; /* Asegura que no se haga demasiado pequeño */
+    min-width: 300px; 
 }
 
 .text-block h3 {
@@ -48,7 +47,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* --- Galería de Clientes --- */
+
 
 .gallery-title {
     text-align: center;
@@ -60,13 +59,13 @@
 
 .client-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 4 columnas y responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 20px;
 }
 
 .client-photo {
     width: 100%;
-    height: 200px; /* Altura fija para uniformidad */
+    height: 200px; 
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.3s ease;
@@ -77,10 +76,10 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Query para responsividad en dispositivos pequeños */
+
 @media (max-width: 768px) {
     .main-content {
-        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+        flex-direction: column; 
     }
     .main-image {
         max-width: 100%;
