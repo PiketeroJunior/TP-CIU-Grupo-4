@@ -9,11 +9,11 @@ export default function Contacto() {
     document.title = 'Contacto - Luna & Granos Café'
   },[]);
   return (
-    <div>
+    <main>
         <Portada texto="Contacto" variant="contacto"></Portada>
         <Container>
           <ContactoForm/>
         </Container>
-    </div>
+    </main>
   )
 }

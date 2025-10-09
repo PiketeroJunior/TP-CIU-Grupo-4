@@ -4,7 +4,7 @@ import Boton from '../Boton/Boton';
 export default function CardMenu({ prod, agregarAlCarrito }) {
 
   return (
-    <div>
+    <article>
       <Card className="h-100">
         <div style={{ overflow: 'hidden' }}>
           <Card.Img
@@ -28,6 +28,6 @@ export default function CardMenu({ prod, agregarAlCarrito }) {
           <Boton texto="Agregar al carrito" onClick={() => agregarAlCarrito(prod)} />
         </Card.Body>
       </Card>
-    </div>
+    </article>
   )
 }

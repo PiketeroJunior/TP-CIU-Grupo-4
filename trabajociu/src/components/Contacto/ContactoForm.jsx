@@ -48,10 +48,10 @@ export default function ContactoForm() {
 
   return (
     <>
-        <div className={styles.aclaracion}>
+        <section className={styles.aclaracion}>
             <p>Este formulario es solo para consultas.</p>
             <p>Si querés hacer una reserva, podés hacerlo seleccionando la opción "<span className={styles.resaltar}>Reservar</span>" en la barra de navegación.</p>
-        </div>
+        </section>
     
         <div className={styles.contenedor}>
                 <Form onSubmit={manejarEnvio}>

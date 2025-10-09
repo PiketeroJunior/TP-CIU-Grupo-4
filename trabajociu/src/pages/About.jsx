@@ -8,9 +8,9 @@ export default function About() {
       document.title = 'Nosotros - Luna & Granos Café'
     }, []);
   return (
-    <>
+    <main>
       <Portada texto="Quiénes somos" variant="nosotros"/>
       <Nosotros />
-    </>
+    </main>
   )
 }

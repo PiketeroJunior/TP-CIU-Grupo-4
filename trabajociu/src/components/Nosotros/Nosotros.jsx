@@ -10,41 +10,38 @@ const CLIENT_IMG_4 = "https://images.pexels.com/photos/2102037/pexels-photo-2102
 
 function AboutUs() {
   return (
-    <>
-      <section className={styles['about-us-container']} id="about-us">
+    <section className={styles['about-us-container']} id="about-us">
+      
+      <article className={styles['main-content']}>
         
-        <div className={styles['main-content']}>
-          
-          <img 
-            src={MAIN_IMG} 
-            alt="Personas conversando en la cafetería" 
-            className={styles['main-image']}
-          />
-          
-          <div className={styles['text-block']}>
-            <h3>Luna & Granos - Más que un café</h3>
-            <p>
-              En Luna & Granos, creemos que los mejores momentos suceden entre sorbos de café y buena compañía. Fundada en la pasión por el grano perfecto, nuestra misión es simple: crear un refugio donde la comunidad pueda reunirse, trabajar y relajarse, desde el amanecer hasta el anochecer.
-            </p>
-            <p>
-              Seleccionamos nuestros granos de origen único y tostamos en pequeños lotes para garantizar un sabor y aroma inigualables. Somos un espacio de encuentro, inspirados en la calma de la noche y la energía de la mañana, sirviendo siempre con el corazón. ¡Te esperamos para compartir tu momento perfecto!
-            </p>
-          </div>
+        <img 
+          src={MAIN_IMG} 
+          alt="Personas conversando en la cafetería" 
+          className={styles['main-image']}
+        />
+        
+        <div className={styles['text-block']}>
+          <h2>Luna & Granos - Más que un café</h2>
+          <p>
+            En Luna & Granos, creemos que los mejores momentos suceden entre sorbos de café y buena compañía. Fundada en la pasión por el grano perfecto, nuestra misión es simple: crear un refugio donde la comunidad pueda reunirse, trabajar y relajarse, desde el amanecer hasta el anochecer.
+          </p>
+          <p>
+            Seleccionamos nuestros granos de origen único y tostamos en pequeños lotes para garantizar un sabor y aroma inigualables. Somos un espacio de encuentro, inspirados en la calma de la noche y la energía de la mañana, sirviendo siempre con el corazón. ¡Te esperamos para compartir tu momento perfecto!
+          </p>
         </div>
+      </article>
 
-        <h3 className={styles['gallery-title']}>Nuestros clientes lo viven así</h3>
-        
-        
-        <div className={styles['client-gallery']}>
-          <img src={CLIENT_IMG_1} alt="Cliente tomando café" className={styles['client-photo']} />
-          <img src={CLIENT_IMG_2} alt="Cliente usando laptop con café" className={styles['client-photo']} />
-          <img src={CLIENT_IMG_3} alt="Cliente sonriendo con café" className={styles['client-photo']} />
-          <img src={CLIENT_IMG_4} alt="Pareja compartiendo café" className={styles['client-photo']} />
-        </div>
+      <h3 className={styles['gallery-title']}>Nuestros clientes lo viven así</h3>
+      
+      
+      <ul className={styles['client-gallery']}>
+        <li><img src={CLIENT_IMG_1} alt="Cliente tomando café" className={styles['client-photo']} /></li>
+        <li><img src={CLIENT_IMG_2} alt="Cliente usando laptop con café" className={styles['client-photo']} /></li>
+        <li><img src={CLIENT_IMG_3} alt="Cliente sonriendo con café" className={styles['client-photo']} /></li>
+        <li><img src={CLIENT_IMG_4} alt="Pareja compartiendo café" className={styles['client-photo']} /></li>
+      </ul>
 
-      </section>
-
-    </>
+    </section>
 
   );
 }

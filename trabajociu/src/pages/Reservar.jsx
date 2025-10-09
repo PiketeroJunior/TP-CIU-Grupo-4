@@ -8,11 +8,11 @@ export default function Reservar() {
     document.title = 'Reservar - Luna & Granos Café'
   })
   return (
-    <>
+    <main>
       <Portada texto="Hacé tu reserva" variant="reserva"/>
       <Container>
         <Formulario/>
       </Container>
-    </>
+    </main>
   )
 }

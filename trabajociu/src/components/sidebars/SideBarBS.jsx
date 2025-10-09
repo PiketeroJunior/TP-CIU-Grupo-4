@@ -24,7 +24,7 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
   };
 
   return (
-    <div className="flex-shrink-0 p-3" style={{ width: "280px" }}>
+    <aside className="flex-shrink-0 p-3" style={{ width: "280px" }}>
       <div className="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
         <CiCoffeeCup size={24}/>
         <span className="fs-5 fw-semibold ms-2" style={{fontFamily:"Libre Baskerville, serif", fontWeight:"bold", color:"#4f493d"}}>Menú</span>
@@ -68,7 +68,7 @@ export default function SideBarBS({ filtrosActivos, setFiltrosActivos }) {
           </li>
         ))}
       </ul>
-    </div>
+    </aside>
   );
 }
 

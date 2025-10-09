@@ -11,10 +11,10 @@ export default function Inicio({agregarAlCarrito}) {
   }, []);
 
   return (
-    <>
+    <main>
         <ImgPrincipal/>
         <Carrusel agregarAlCarrito={agregarAlCarrito}/>
         <Reseñas/>
-    </>
+    </main>
   )
 }

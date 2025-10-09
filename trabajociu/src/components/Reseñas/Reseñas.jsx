@@ -9,7 +9,7 @@ import 'swiper/css';
 
 const Reseñas = () => {
   return (
-    <div className={styles["comentarios-carrusel-contenedor"]}>
+    <section className={styles["comentarios-carrusel-contenedor"]}>
       <h2 className={styles["titulo-comentarios"]}>Nuestros clientes felices</h2>
       
       <Swiper
@@ -43,7 +43,7 @@ const Reseñas = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

@@ -24,7 +24,7 @@ export default function Menu({ agregarAlCarrito}) {
   
 
   return (
-    <>
+    <main>
       <Portada texto="Menú" variant="menu"/>
       <Container>
       <div className="contenedor">
@@ -42,6 +42,6 @@ export default function Menu({ agregarAlCarrito}) {
         </div>
       </div>
       </Container>
-    </>
+    </main>
   )
 }

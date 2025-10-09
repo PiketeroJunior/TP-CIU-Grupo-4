@@ -19,7 +19,7 @@ const Carrusel = ({agregarAlCarrito}) => {
   .slice(0, 6);
 
   return (
-    <div className="carrusel-contenedor">
+    <section className="carrusel-contenedor">
       <h2 className="prodDest">Productos destacados</h2>
       <Swiper
         
@@ -63,7 +63,7 @@ const Carrusel = ({agregarAlCarrito}) => {
         ))}
       </Swiper>
 
-    </div>
+    </section>
   );
 };
 
