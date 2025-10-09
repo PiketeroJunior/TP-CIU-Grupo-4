@@ -53,10 +53,19 @@ export default function Formulario() {
 
     const [error, setError] = useState("")
     const [intentos, setIntentos] = useState(0)
+    
 
     useEffect(() => {
-       if (intentos > 0) {
-            setError(data.nombre.trim() ? "" : "El nombre no puede ser vacío.");
+        if (intentos > 0) {
+            const permitidos = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZáéíóúÁÉÍÓÚñÑ "
+
+            if(!data.nombre.trim()) {
+                setError("El nombre no puede ser vacío.")
+            } else if([... data.nombre].some(letra => !permitidos.includes(letra))) {
+                setError("El nombre no puede contener caracteres especiales.");
+            } else {
+                setError("")
+            }
         }
    }, [data.nombre, intentos])
 
