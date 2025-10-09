@@ -6,14 +6,14 @@ import { Badge, Button } from 'react-bootstrap';
 
 
 
-function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, setCantTotal }) {
+function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, setCantTotal, handleClose }) {
     const estaVacio = carrito.length === 0;
     const [mostrarExito, setMostrarExito] = useState(false);
 
     function vaciarCarrito() {
-        setCarrito([]);
-        setValorTotal(0);
-        setCantTotal(0);
+        setCarrito([])
+        setValorTotal(0)
+        setCantTotal(0)
     }
 
     function eliminarProducto(producto) {
@@ -63,23 +63,23 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                             </div>
                             <div className={styles.accionesProducto}>
                                 <div className={styles.cantidadProducto}>
-                                    <Badge pill bg="light" text="dark">          
-                                    <div className="btn-group" role="group" aria-label="Basic outlined example">
-                                        <button type="button" className=" btn btn-light btn-sm" onClick={() => disminuirCantidad(producto)}>
-                                            -
-                                        </button>
-                                        <button type="button" className="btn btn-light btn-sm" >{producto.cantidad}</button>
-                                        <button type="button" className="btn btn-light btn-sm" onClick={() => aumentarCantidad(producto)}>
-                                            +
-                                        </button>
-                                    </div>
+                                    <Badge pill bg="light" text="dark">
+                                        <div className="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" className=" btn btn-light btn-sm" onClick={() => disminuirCantidad(producto)}>
+                                                -
+                                            </button>
+                                            <button type="button" className="btn btn-light btn-sm" >{producto.cantidad}</button>
+                                            <button type="button" className="btn btn-light btn-sm" onClick={() => aumentarCantidad(producto)}>
+                                                +
+                                            </button>
+                                        </div>
                                     </Badge>
                                 </div>
-                                
+
                                 <Button
-                                 style={{ border: 'none', background: 'transparent', color: '#6c4141' }} 
-                                 onClick={() => eliminarProducto(producto)} title="Eliminar producto">
-                                    <FaRegTrashCan/>
+                                    style={{ border: 'none', background: 'transparent', color: '#6c4141' }}
+                                    onClick={() => eliminarProducto(producto)} title="Eliminar producto">
+                                    <FaRegTrashCan />
                                 </Button>
                             </div>
                         </div>
@@ -87,18 +87,21 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
                     <div className={styles.totalContainer}>
                         <h5 id={styles.precioTotal}>{`Total: $ ${valorTotal}`}</h5>
                         <button type="button" className="btn btn-outline-success" onClick={pagarCarrito}>Pagar</button>
-                        <button type="button" className="btn btn-outline-danger"onClick={vaciarCarrito}>Vaciar Carrito</button>
+                        <button type="button" className="btn btn-outline-danger" onClick={vaciarCarrito}>Vaciar Carrito</button>
                     </div>
                 </>
             )}
             <ModalConfirm
-            isOpen={mostrarExito}
-            titulo="¡Gracias por tu compra!"
-            mensaje="El pago se realizó con éxito."
-            onClose={() => setMostrarExito(false)}
-            textoBoton="ir al inicio"
-            variantBoton="secundario"
-            to="/"
+                isOpen={mostrarExito}
+                titulo="¡Gracias por tu compra!"
+                mensaje="El pago se realizó con éxito."
+                onClose={() => {
+                    setMostrarExito(false)
+                    handleClose()
+                }}  
+                textoBoton="ir al inicio"
+                variantBoton="secundario"
+                to="/"
             ></ModalConfirm>
         </aside >
     )

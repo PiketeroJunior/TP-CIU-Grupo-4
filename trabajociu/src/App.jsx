@@ -13,7 +13,7 @@ function App() {
   const [valorTotal, setValorTotal] = useState(0)
   const [cantTotal, setCantTotal] = useState(0)
 
- 
+
   
     function agregarAlCarrito (producto) {
       const itemEnCarrito = carrito.find(item => item.id === producto.id)
