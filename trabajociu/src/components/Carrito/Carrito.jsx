@@ -1,5 +1,4 @@
 import styles from './Carrito.module.css'
-import Boton from '../Boton/Boton';
 import { useState } from 'react';
 import ModalConfirm from '../ModalConfirm/ModalConfirm';
 import { FaRegTrashCan } from 'react-icons/fa6';
@@ -51,7 +50,7 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
     }
 
     return (
-        <div className={styles.carritoContainer}>
+        <aside className={styles.carritoContainer}>
             {estaVacio ? (
                 <h2 id={styles.carritoVacio}>El carrito está vacío</h2>
             ) : (
@@ -101,7 +100,7 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
             variantBoton="secundario"
             to="/"
             ></ModalConfirm>
-        </div >
+        </aside >
     )
 }
 
