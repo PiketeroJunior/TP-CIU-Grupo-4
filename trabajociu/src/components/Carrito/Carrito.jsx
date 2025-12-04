@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ModalConfirm from '../ModalConfirm/ModalConfirm';
 import { FaRegTrashCan } from 'react-icons/fa6';
 import { Badge, Button } from 'react-bootstrap';
+import { crearVenta } from '../../services/api';
 
 
 
@@ -23,9 +24,28 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
         setCarrito(carritoSinProducto)
     }
 
-    function pagarCarrito() {
-        setMostrarExito(true)
-        vaciarCarrito()
+    async function pagarCarrito() {
+        try {
+            const detalles = carrito.map(item => ({
+                productoId: item.id,
+                cantidad: item.cantidad,
+                precioUnitario: item.precio
+            }))
+            
+            const ventaData = {
+                fecha: new Date().toISOString().split('T')[0],
+                estado: 'PENDIENTE',
+                detalles,
+                total: valorTotal
+            }
+            
+            await crearVenta(ventaData)
+            setMostrarExito(true)
+            vaciarCarrito()
+        } catch (error) {
+            console.error('Error al procesar la compra:', error)
+            alert('Hubo un error al procesar la compra. Por favor intenta nuevamente.')
+        }
     }
 
     function aumentarCantidad(producto) {
