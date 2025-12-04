@@ -16,7 +16,7 @@ export function mapearProductoDTO(dto) {
     categoria: dto.categoria,
     precio: dto.precio,
     imagen: dto.imagen,
-    cantidad: dto.cantidad,
+    stock: dto.cantidad,
     subcategoria: dto.subcategoria,
   };
 }

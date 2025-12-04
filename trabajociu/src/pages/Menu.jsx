@@ -11,7 +11,7 @@ export default function Menu({ agregarAlCarrito}) {
     document.title = 'Menu - Luna & Granos Café'
   }, [])
 
-n  const [filtrosActivos, setFiltrosActivos] = useState([])
+  const [filtrosActivos, setFiltrosActivos] = useState([])
   const [productos, setProductos] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
@@ -45,12 +45,12 @@ n  const [filtrosActivos, setFiltrosActivos] = useState([])
     return () => { mounted = false }
   }, [Array.isArray(filtrosActivos) ? filtrosActivos.join("|") : ""])
 
-n  const productosFiltrados =
+  const productosFiltrados =
     filtrosActivos.length === 0
       ? productos
       : productos.filter((p) => filtrosActivos.includes(p.categoria))
 
-n  return (
+  return (
     <main>
       <Portada texto="Menú" variant="menu"/>
       <Container>

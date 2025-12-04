@@ -22,11 +22,14 @@ function App() {
           item.id === producto.id ? {...item, cantidad: item.cantidad + 1} : item
         )
         setCarrito(nuevosProductos)
+        setCantTotal(cantTotal + 1)
+        setValorTotal(valorTotal + producto.precio)
       }else{
-        setCarrito([...carrito, producto])
+        const productoAlCarrito = {...producto, cantidad: 1}
+        setCarrito([...carrito, productoAlCarrito])
+        setCantTotal(cantTotal + 1)
+        setValorTotal(valorTotal + producto.precio)
       }
-      setCantTotal(cantTotal + producto.cantidad)
-      setValorTotal(valorTotal + producto.precio)
     }
 
   return (

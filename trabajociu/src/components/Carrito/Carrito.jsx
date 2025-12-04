@@ -27,15 +27,17 @@ function Carrito({ carrito, valorTotal, cantTotal, setCarrito, setValorTotal, se
     async function pagarCarrito() {
         try {
             const detalles = carrito.map(item => ({
-                productoId: item.id,
-                cantidad: item.cantidad,
-                precioUnitario: item.precio
+                nombreProd: item.titulo,
+                idProd: item.id,
+                cantProd: item.cantidad,
+                precio: item.precio,
+                subtotal: item.precio * item.cantidad
             }))
             
             const ventaData = {
                 fecha: new Date().toISOString().split('T')[0],
-                estado: 'PENDIENTE',
-                detalles,
+                estado: 'APROBADO',
+                detalles: detalles,
                 total: valorTotal
             }
             
